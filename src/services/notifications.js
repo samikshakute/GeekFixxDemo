@@ -1,5 +1,5 @@
 export const notify = (url) => {
-  console.log("hereeeeeeee");
+  console.log("its time");
   Notification.requestPermission(function (result) {
     if (result === "granted") {
       navigator.serviceWorker.ready.then(function (registration) {
@@ -44,10 +44,15 @@ export const notifySitStraight = (url) => {
       });
     }
   });
+
+  const audio = new Audio(
+    "https://soundbible.com/mp3/service-bell_daniel_simion.mp3"
+  );
+  audio.play();
 };
 
 export const notifyEar = (url) => {
-  console.log("hereeeeeeee");
+  console.log("Ear");
   Notification.requestPermission(function (result) {
     if (result === "granted") {
       navigator.serviceWorker.ready.then(function (registration) {
@@ -69,7 +74,52 @@ export const notifyEar = (url) => {
       });
     }
   });
+  const audio = new Audio(
+    "https://soundbible.com/mp3/service-bell_daniel_simion.mp3"
+  );
+  audio.play();
+};
 
+export const notifyStress = (url) => {
+  console.log("Stress");
+  Notification.requestPermission(function (result) {
+    if (result === "granted") {
+      navigator.serviceWorker.ready.then(function (registration) {
+        registration.showNotification("Let's have fun!", {
+          body: "Watch Funny Video",
+          icon: "./assets/cartoon/smileydev.png",
+          data: url,
+          vibrate: [200, 100, 200, 100, 200, 100, 200],
+          tag: "Watch Video!",
+          requireInteraction: true,
+        });
+        console.log();
+      });
+    }
+  });
+  const audio = new Audio(
+    "https://soundbible.com/mp3/service-bell_daniel_simion.mp3"
+  );
+  audio.play();
+};
+
+export const notifyWater = (url) => {
+  console.log("Water");
+  Notification.requestPermission(function (result) {
+    if (result === "granted") {
+      navigator.serviceWorker.ready.then(function (registration) {
+        registration.showNotification("Drink Water", {
+          body: "Time to drink water",
+          icon: "./assets/cartoon/smileydev.png",
+          data: url,
+          vibrate: [200, 100, 200, 100, 200, 100, 200],
+          tag: "Watch Video!",
+          requireInteraction: true,
+        });
+        console.log();
+      });
+    }
+  });
   const audio = new Audio(
     "https://soundbible.com/mp3/service-bell_daniel_simion.mp3"
   );

@@ -14,7 +14,7 @@ function HowtoUse() {
             <h1 clasName="mb-xxl">How to use?</h1>
             <div className="line-graph">
               <p>
-                Dev care will help you to take care of your health as
+                GeekFixx will help you to take care of your health as
                 developers.
               </p>
 
@@ -26,9 +26,9 @@ function HowtoUse() {
                     <Link
                       to="/teachbackcare"
                       style={{
-                        color: "var(--clr-primary-400)",
+                        color: "var(--clr-primary-500)",
                         fontSize: "1.1rem",
-                        borderBottom: "1px solid var(--clr-primary-400)",
+                        borderBottom: "1px solid var(--clr-primary-500)",
                         marginLeft: "0.25rem",
                       }}
                     >
@@ -68,10 +68,10 @@ function HowtoUse() {
               </p>
 
               <h2 className="mt-xl mb-md">Ear care</h2>
-              <p style={{ maxWidth: "80ch", lineHeight: "2", marginBottom: "5rem" }}>
+              <p style={{ maxWidth: "80ch", lineHeight: "2" }}>
                 <ol>
                   <li>Click on the toggle button of Ear care on dashboard</li>
-                  <li>Give earphone permission</li>
+                  <li>Start the timer</li>
                   <li>
                     Now after 40 minutes the app will remind you that you are
                     reaching the daily limit of earphone usage time
@@ -79,6 +79,33 @@ function HowtoUse() {
                   <li>
                     It is advisable to use earphones for maximum 60 minutes a
                     day at a maximum of 60% volume
+                  </li>
+                </ol>
+              </p>
+
+              <h2 className="mt-xl mb-md">Stress care</h2>
+              <p style={{ maxWidth: "80ch", lineHeight: "2"}}>
+                <ol>
+                  <li>
+                    Click on the toggle button of Stress care on dashboard
+                  </li>
+                  <li>Start the timer</li>
+                  <li>
+                    Now after 20 minutes the app will remind you to chill out
+                    and also allow you to watch a funny video
+                  </li>
+                </ol>
+              </p>
+
+              <h2 className="mt-xl mb-md">Water Reminders</h2>
+               <p style={{ maxWidth: "80ch", lineHeight: "2", marginBottom: "5rem" }}>
+                <ol>
+                  <li>
+                    Click on the toggle button of Water Reminders on dashboard
+                  </li>
+                  <li>
+                    Every 20 minutes the app will remind you stay hydrated and
+                    drink water
                   </li>
                 </ol>
               </p>
