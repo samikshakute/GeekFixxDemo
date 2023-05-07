@@ -11,27 +11,21 @@ const Sidebar = () => {
             <span className="fw-bold">Dashboard</span>
           </li>
         </Link>
-        <Link to="/backcare">
+        <Link to="/statistics">
           <li>
-            <i className="fa-solid fa-child"></i>
-            <span>Back care</span>
+            <i className="fas fa-chart-simple"></i>
+            <span>Statistics</span>
           </li>
         </Link>
-        <Link to="/eyecare">
+        <Link to="/achievements">
           <li>
-            <i className="fa-solid fa-eye"></i>
-            <span>Eye Care</span>
-          </li>
-        </Link>
-        <Link to="/earcare">
-          <li>
-            <i className="fa-solid fa-ear-listen"></i>
-            <span>Ear Care</span>
+            <i className="fas fa-trophy"></i>
+            <span>Achievements</span>
           </li>
         </Link>
         <Link to="/howtouse">
           <li>
-          <i className="fa-solid fa-circle-question"></i>
+            <i className="fa-solid fa-circle-question"></i>
             <span>How to use</span>
           </li>
         </Link>

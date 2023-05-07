@@ -16,7 +16,7 @@ function BackCare() {
         <Sidebar></Sidebar>
         <div className="main-graph-wrapper">
           <main className="main">
-            <h1>Back Care</h1>
+            <h1>Posture Reminders</h1>
             <div className="graph">
               <PieChart></PieChart>
             </div>

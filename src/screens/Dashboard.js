@@ -10,6 +10,8 @@ import {
   notify,
   notifyEar,
   notifySitStraight,
+  notifyStress,
+  notifyWater,
 } from "../services/notifications";
 import { setEarData } from "../services/datahandling";
 import Webcam from "react-webcam";
@@ -60,7 +62,7 @@ function Dashboard() {
   let visitedHome = localStorage.getItem("visited");
   let name = localStorage.getItem("name");
 
-  const [time, setTime] = useState(20000);
+  const [time, setTime] = useState(100);
   const [isCamOn, setIsCamOn] = useState(false);
 
   const [isStarted, setIsStarted] = useState(false);
@@ -68,6 +70,8 @@ function Dashboard() {
   const [backOption, setBackOption] = useState(true);
   const [eyeOption, setEyeOption] = useState(true);
   const [soundOption, setSoundOption] = useState(false);
+  const [stressOption, setStressOption] = useState(false);
+  const [waterOption, setWaterOption] = useState(false);
   const [isPluggedOut, setIsPluggedOut] = useState();
   const [earDeviceId, setEarDeviceId] = useState("");
   const [isDisabled, setIsDisabled] = useState(false);
@@ -98,6 +102,12 @@ function Dashboard() {
       notifyEar(window.location.href);
       setEarData();
     }
+    if (stressOption) {
+      notifyStress(window.location.href);
+    }
+    if (waterOption) {
+      notifyWater(window.location.href);
+    }
     timeCounter++;
     restart();
   };
@@ -127,6 +137,10 @@ function Dashboard() {
     if (!eardata) {
       localStorage.setItem("eardata", JSON.stringify([0, 0, 0, 0, 0, 0, 0]));
     }
+    let waterdata = localStorage.getItem("waterdata");
+    if (!waterdata) {
+      localStorage.setItem("waterdata", JSON.stringify([0, 0, 0, 0, 0, 0, 0]));
+    }
     navigator.serviceWorker.register("sw.js");
     let str = localStorage.getItem("myData");
     if (str) {
@@ -137,14 +151,13 @@ function Dashboard() {
   }, []);
 
   useEffect(() => {
-    console.log(eyeOption, backOption, soundOption)
-    if(eyeOption || backOption || soundOption) {
-      setIsDisabled(false)
-    }
-    else {
+    console.log(eyeOption, backOption, soundOption, stressOption, waterOption);
+    if (eyeOption || backOption || soundOption || stressOption || waterOption) {
+      setIsDisabled(false);
+    } else {
       setIsDisabled(true);
     }
-  }, [eyeOption, backOption, soundOption]);
+  }, [eyeOption, backOption, soundOption, stressOption, waterOption]);
 
   const classifyPic = async () => {
     if (backOption) {
@@ -168,6 +181,21 @@ function Dashboard() {
         }
         localStorage.setItem("goodposturecount", goodposturecount + 1);
       }
+      
+      if (result.label === "1") {
+        let postureAchievement = Number(localStorage.getItem("postureAchievement"));
+        if (!postureAchievement) {
+          postureAchievement = 0;
+        }
+        localStorage.setItem("postureAchievement", 0);
+      } else {
+        let postureAchievement = Number(localStorage.getItem("postureAchievement"));
+        if (!postureAchievement) {
+          postureAchievement = 0;
+        }
+        localStorage.setItem("postureAchievement", postureAchievement + 1);
+      }
+    
     }
   };
 
@@ -239,14 +267,22 @@ function Dashboard() {
                 backOption={backOption}
                 eyeOption={eyeOption}
                 soundOption={soundOption}
+                stressOption={stressOption}
+                waterOption={waterOption}
                 setBackOption={setBackOption}
                 setEyeOption={setEyeOption}
                 setSoundOption={setSoundOption}
+                setStressOption={setStressOption}
+                setWaterOption={setWaterOption}
               />
             </div>
             <div className="cta flex-col">
               <div>
-                <button className="btn btn-primary" onClick={restart} disabled={isDisabled}>
+                <button
+                  className="btn btn-primary"
+                  onClick={restart}
+                  disabled={isDisabled}
+                >
                   Start
                 </button>
                 {isStarted && (

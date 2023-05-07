@@ -53,7 +53,7 @@
 
 .main-content .btn-primary {
   border: none;
-  background-color: #2196f3;
+  background-color: var(--clr-primary-500);
   padding: 1rem 5rem;
   color: white;
   font-size: 1.2rem;
@@ -62,9 +62,13 @@
   cursor: pointer;
 }
 
+.main-content .btn-primary:hover {
+  background-color: var(--clr-primary-600);
+}
+
 .main-content .btn-secondary {
   border: none;
-  background-color: #DBEAFE;
+  background-color: var(--clr-primary-100);
   padding: 1rem 5rem;
   color: black;
   font-size: 1.2rem;
@@ -75,6 +79,7 @@
 
 .main-content .btn-secondary:hover {
   background-color: var(--clr-primary-500);
+  color: white;
 }
 
 .cta {
@@ -85,19 +90,16 @@
   justify-content: center;
 }
 
-.btn-primary:hover {
-  background-color: var(--clr-primary-600);
-}
-
 .btn-primary:disabled {
   cursor: no-drop;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 1300px) {
   .sidebar-links i {
     font-size: 1.5rem;
   }
+
   .sidebar-links span {
     display: none;
   }
@@ -122,6 +124,7 @@
 }
 
 @media screen and (max-width: 800px) {
+
   .main-wrapper,
   .sidebar {
     margin-top: 1rem;
@@ -142,7 +145,7 @@
   h1 {
     font-size: 1.5rem;
     font-weight: 500;
-    
+
     /* display: none; */
   }
 
@@ -163,8 +166,7 @@
     flex-direction: column;
   }
 
-  .timer-clock
-   {
+  .timer-clock {
     width: 100%;
   }
 
@@ -193,7 +195,7 @@
   /* h1 {
     display: none;
   } */
-  
+
   .options {
     width: 100%;
   }
