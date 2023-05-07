@@ -27,6 +27,12 @@ const OnboardingSteps = ({ setCard }) => {
           <p>
             <i className="fa-solid fa-ear-listen"></i>Ear
           </p>
+          <p>
+            <i className="fa-solid fa-face-smile"></i>Stress
+          </p>
+          <p>
+            <i className="fa-solid fa-glass-water"></i>Hydration
+          </p>
         </div>
       </div>
       <div className="flex flex-col flex-items-end">

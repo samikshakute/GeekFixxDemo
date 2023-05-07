@@ -43,12 +43,13 @@
 }
 
 .options {
-  width: 30%;
+  width: 35%;
 }
 
 .option {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main-content .btn-primary {

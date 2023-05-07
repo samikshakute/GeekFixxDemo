@@ -84,7 +84,7 @@ function HowtoUse() {
               </p>
 
               <h2 className="mt-xl mb-md">Stress care</h2>
-              <p style={{ maxWidth: "80ch", lineHeight: "2"}}>
+              <p style={{ maxWidth: "80ch", lineHeight: "2" }}>
                 <ol>
                   <li>
                     Click on the toggle button of Stress care on dashboard
@@ -98,7 +98,7 @@ function HowtoUse() {
               </p>
 
               <h2 className="mt-xl mb-md">Water Reminders</h2>
-               <p style={{ maxWidth: "80ch", lineHeight: "2", marginBottom: "5rem" }}>
+              <p style={{ maxWidth: "80ch", lineHeight: "2", marginBottom: "1rem" }}>
                 <ol>
                   <li>
                     Click on the toggle button of Water Reminders on dashboard
@@ -107,6 +107,7 @@ function HowtoUse() {
                     Every 20 minutes the app will remind you stay hydrated and
                     drink water
                   </li>
+                  <br /> <br />
                 </ol>
               </p>
             </div>

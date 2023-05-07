@@ -16,12 +16,12 @@ const Toggles = ({
     <div className="options">
       <div className="option">
         <img
-          src=""
+          src="./assets/back.svg"
           alt="Posture icon"
           class="preference-icon"
         />
         <div>Back Care:</div>
-        <div>
+        <div className="option-text">
           <label className="switch">
             <input
               type="checkbox"
@@ -36,8 +36,8 @@ const Toggles = ({
       </div>
 
       <div className="option">
-        <img src="/images/eye.svg" alt="Eye icon" class="preference-icon" />
-        <div>Eye Care:</div>
+        <img src="./assets/eye.svg" alt="Eye icon" class="preference-icon" />
+        <div className="option-text">Eye Care:</div>
         <div>
           <label className="switch">
             <input
@@ -53,8 +53,8 @@ const Toggles = ({
       </div>
 
       <div className="option">
-        <img src="/images/ear.svg" alt="Ear icon" class="preference-icon" />
-        <div>Ear Care:</div>
+        <img src="./assets/ear.svg" alt="Ear icon" class="preference-icon" />
+        <div className="option-text">Ear Care:</div>
         <div>
           <label className="switch">
             <input
@@ -70,8 +70,8 @@ const Toggles = ({
       </div>
 
       <div className="option">
-        <img src="" alt="Video icon" class="preference-icon" />
-        <div>Stress Care:</div>
+        <img src="./assets/stress.svg" alt="stress icon" class="preference-icon" />
+        <div className="option-text">Stress Care:</div>
         <div>
           <label className="switch">
             <input
@@ -87,8 +87,8 @@ const Toggles = ({
       </div>
 
       <div className="option">
-        <img src="/images/water.svg" alt="glass icon" class="preference-icon" />
-        <div>Water Reminders:</div>
+        <img src="./assets/water.svg" alt="glass icon" class="preference-icon" />
+        <div className="option-text">Water Reminders:</div>
         <div>
           <label className="switch">
             <input
