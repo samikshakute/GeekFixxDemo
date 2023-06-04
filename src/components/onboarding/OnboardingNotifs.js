@@ -20,7 +20,7 @@ const OnboardingNotifs = ({ setCard }) => {
       <div>
         <div className="flex flex-wrap notifs">
           <p>
-            <i class="fa-regular fa-bell"></i>Allow Notifications to remind you
+            <i className="fa-regular fa-bell"></i>Allow Notifications to remind you
           </p>
         </div>
       </div>

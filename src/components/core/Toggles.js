@@ -18,7 +18,7 @@ const Toggles = ({
         <img
           src="./assets/back.svg"
           alt="Posture icon"
-          class="preference-icon"
+          className="preference-icon"
         />
         <div>Back Care:</div>
         <div className="option-text">
@@ -36,7 +36,7 @@ const Toggles = ({
       </div>
 
       <div className="option">
-        <img src="./assets/eye.svg" alt="Eye icon" class="preference-icon" />
+        <img src="./assets/eye.svg" alt="Eye icon" className="preference-icon" />
         <div className="option-text">Eye Care:</div>
         <div>
           <label className="switch">
@@ -53,7 +53,7 @@ const Toggles = ({
       </div>
 
       <div className="option">
-        <img src="./assets/ear.svg" alt="Ear icon" class="preference-icon" />
+        <img src="./assets/ear.svg" alt="Ear icon" className="preference-icon" />
         <div className="option-text">Ear Care:</div>
         <div>
           <label className="switch">
@@ -70,7 +70,7 @@ const Toggles = ({
       </div>
 
       <div className="option">
-        <img src="./assets/stress.svg" alt="stress icon" class="preference-icon" />
+        <img src="./assets/stress.svg" alt="stress icon" className="preference-icon" />
         <div className="option-text">Stress Care:</div>
         <div>
           <label className="switch">
@@ -87,7 +87,7 @@ const Toggles = ({
       </div>
 
       <div className="option">
-        <img src="./assets/water.svg" alt="glass icon" class="preference-icon" />
+        <img src="./assets/water.svg" alt="glass icon" className="preference-icon" />
         <div className="option-text">Water Reminders:</div>
         <div>
           <label className="switch">

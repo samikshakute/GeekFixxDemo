@@ -56,7 +56,7 @@ function EarCare() {
               style={{ position: "relative" }}
             >
               <i
-                class="fa-solid fa-xmark"
+                className="fa-solid fa-xmark"
                 style={{
                   position: "absolute",
                   top: "0",
@@ -80,15 +80,15 @@ function EarCare() {
               <div className="flex flex-col flex-wrap fs-sm steps">
                 <p className="mb-sm">
                   {" "}
-                  <i class="fa-solid fa-ear-listen"></i>It is recommended to use
+                  <i className="fa-solid fa-ear-listen"></i>It is recommended to use
                   earphones max for 60 minutes per day.{" "}
                 </p>
                 <p className="mb-sm">
-                  <i class="fa-solid fa-bell"></i>We will remind you when u
+                  <i className="fa-solid fa-bell"></i>We will remind you when u
                   reach the time limit.
                 </p>
                 <p className="mb-sm">
-                  <i class="fa-solid fa-chart-line"></i>We will visualize your
+                  <i className="fa-solid fa-chart-line"></i>We will visualize your
                   earphone usage time through chart
                 </p>
                 {/* <p className='mb-sm'>This will help your eyes to relax.</p> */}
@@ -114,7 +114,7 @@ function EarCare() {
               style={{ position: "relative" }}
             >
               <i
-                class="fa-solid fa-xmark"
+                className="fa-solid fa-xmark"
                 style={{
                   position: "absolute",
                   top: "0",
@@ -138,11 +138,11 @@ function EarCare() {
               <div className="flex flex-col flex-wrap fs-sm steps">
                 <p className="mb-sm"> Follow 60-60 rule. </p>
                 <p className="mb-sm">
-                  <i class="fa-solid fa-clock"></i>Use earphones maximum for 60
+                  <i className="fa-solid fa-clock"></i>Use earphones maximum for 60
                   minutes per day.
                 </p>
                 <p className="mb-sm">
-                  <i class="fa-solid fa-volume-high"></i>Keep the volume 60%
+                  <i className="fa-solid fa-volume-high"></i>Keep the volume 60%
                   maximum.
                 </p>
                 {/* <p className='mb-sm'>This will help your eyes to relax.</p> */}

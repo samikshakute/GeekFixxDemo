@@ -16,15 +16,15 @@ const OnboardingBackCare = ({ setCard }) => {
       <div>
         <div className="flex flex-col flex-wrap fs-sm steps">
           <p className="mb-sm">
-            <i class="fa-solid fa-camera"></i>Take pictures of good and bad
+            <i className="fa-solid fa-camera"></i>Take pictures of good and bad
             posture{" "}
           </p>
           <p className="mb-sm">
-            <i class="fa-brands fa-leanpub"></i>App will learn the difference
+            <i className="fa-brands fa-leanpub"></i>App will learn the difference
             between them
           </p>
           <p className="mb-sm">
-            <i class="fa-solid fa-bell"></i>Notify you if you are in bad posture
+            <i className="fa-solid fa-bell"></i>Notify you if you are in bad posture
           </p>
         </div>
       </div>

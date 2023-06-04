@@ -187,7 +187,7 @@ const TrainBackCare = () => {
               />
             </div>
             <div className="txt-center desc">
-              Problem with camera. Can't use this feature :(
+              Problem with camera. Can't use this feature
             </div>
             <div className="btn-center">
               <Link to="/">

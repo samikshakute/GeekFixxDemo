@@ -56,7 +56,7 @@ function EyeCare() {
               style={{ position: "relative" }}
             >
               <i
-                class="fa-solid fa-xmark"
+                className="fa-solid fa-xmark"
                 style={{
                   position: "absolute",
                   top: "0",
@@ -80,15 +80,15 @@ function EyeCare() {
               <div className="flex flex-col flex-wrap fs-sm steps">
                 <p className="mb-sm">
                   {" "}
-                  <i class="fa-solid fa-eye"></i>We will help you to relax your
+                  <i className="fa-solid fa-eye"></i>We will help you to relax your
                   eyes.{" "}
                 </p>
                 <p className="mb-sm">
-                  <i class="fa-regular fa-clock"></i>We will remind you every 20
+                  <i className="fa-regular fa-clock"></i>We will remind you every 20
                   minutes
                 </p>
                 <p className="mb-sm">
-                  <i class="fa-solid fa-bell"></i>Click on the notification and
+                  <i className="fa-solid fa-bell"></i>Click on the notification and
                   do the given exercise
                 </p>
               </div>
@@ -113,7 +113,7 @@ function EyeCare() {
               style={{ position: "relative" }}
             >
               <i
-                class="fa-solid fa-xmark"
+                className="fa-solid fa-xmark"
                 style={{
                   position: "absolute",
                   top: "0",

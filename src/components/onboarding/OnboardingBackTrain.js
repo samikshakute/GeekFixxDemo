@@ -17,7 +17,7 @@ const OnboardingBackTrain = () => {
       <div>
         <div className="flex flex-col flex-wrap fs-md steps">
           <p className="mb-sm">
-            <i class="fa-solid fa-chalkboard-user"></i>Lets teach our app what a
+            <i className="fa-solid fa-chalkboard-user"></i>Lets teach our app what a
             good posture and a bad posture is{" "}
           </p>
         </div>

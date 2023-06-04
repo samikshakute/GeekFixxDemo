@@ -16,14 +16,14 @@ const OnboardingHow = ({ setCard }) => {
       <div>
         <div className="flex flex-col flex-wrap fs-sm steps">
           <p className="mb-sm">
-            <i class="fa-regular fa-circle-check"></i>Detect your posture and
+            <i className="fa-regular fa-circle-check"></i>Detect your posture and
             notify
           </p>
           <p className="mb-sm">
-            <i class="fa-regular fa-clock"></i> Reminder for an exercise
+            <i className="fa-regular fa-clock"></i> Reminder for an exercise
           </p>
           <p className="mb-sm">
-            <i class="fa-solid fa-chart-line"></i> Analysis of your habits
+            <i className="fa-solid fa-chart-line"></i> Analysis of your habits
           </p>
         </div>
       </div>
