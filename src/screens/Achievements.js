@@ -25,8 +25,12 @@ function Achievements() {
         )}
         {postureAchievement > 10 && (
           <p>
-            <i className="fas fa-trophy"/>Achievement Earned, You've sat straight for 10 consecutive times!
-          </p>
+            <div className="card" style={{margin:"3rem",padding: "2rem", background: "rgb(217, 217, 217)", borderRadius:"25px"}}>
+            	<p className="fw-bold fs-lg">Achievement: Posture Prince</p>
+            	<p className="fs-sm mb-md">
+              <i className="fas fa-trophy"/>&nbsp; You have sat straight for 10 consecutive times
+            	</p>
+           </div>          </p>
         )}
       </div>
     </>
