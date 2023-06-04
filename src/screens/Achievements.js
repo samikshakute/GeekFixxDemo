@@ -30,7 +30,8 @@ function Achievements() {
             	<p className="fs-sm mb-md">
               <i className="fas fa-trophy"/>&nbsp; You have sat straight for 10 consecutive times
             	</p>
-           </div>          </p>
+           </div>         
+          </p>
         )}
       </div>
     </>
